@@ -1,2 +1,32 @@
-
-a
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ pwd
+/workspaces/cli-basics-wrafp
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ mkdir CLIBasicsFolder
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ cd CLIBasicsFolder/
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main) $ touch myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ ls
+myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ echo Kevin Huang, ICS4Ub >> myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ cat myfile.txt
+Kevin Huang, ICS4Ub
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ ls CLIBasicsFolder/
+myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ cp myfile.txt myfile_copy.txt
+cp: cannot stat 'myfile.txt': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ cp myfile.txt myfile_copy.txt
+cp: cannot stat 'myfile.txt': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ ls
+CLIBasicsFolder  README.md  TerminalSession.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ cd CLIBasicsFolder/
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ cp myfile.txt myfile_copy.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ ls
+myfile_copy.txt  myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ mv myfile_copy.txt myfile2.txt
+\@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ mv myfile2.txt ..
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ ls ..
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ cd ..
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ 
