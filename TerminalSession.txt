@@ -29,4 +29,28 @@ myfile_copy.txt  myfile.txt
 @wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ ls ..
 CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
 @wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ cd ..
-@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ 
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ ls
+CLIBasicsFolder  myfile2.txt  README.md  TerminalSession.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm myfile.txt
+rm: cannot remove 'myfile.txt': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ help rm
+bash: help: no help topics match `rm'.  Try `help help' or `man -k rm' or `info rm'.
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm help
+rm: cannot remove 'help': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm myfile.txt
+rm: cannot remove 'myfile.txt': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm .. myfile.txt
+rm: cannot remove '..': Is a directory
+rm: cannot remove 'myfile.txt': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm {myfile.txt}
+rm: cannot remove '{myfile.txt}': No such file or directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main) $ rm CLIBasicsFolder/myfile.txt
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ cd CLIBasicsFolder/
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ ls
+@wrafp ➜ /workspaces/cli-basics-wrafp/CLIBasicsFolder (main ✗) $ cd ..
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ rm CLIBasicsFolder/
+rm: cannot remove 'CLIBasicsFolder/': Is a directory
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ rmdir CLIBasicsFolder/
+@wrafp ➜ /workspaces/cli-basics-wrafp (main ✗) $ ls
+myfile2.txt  README.md  TerminalSession.txt
+
